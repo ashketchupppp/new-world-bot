@@ -37,13 +37,6 @@ Purpose:
 }
 
 class NewWorldCommands(commands.Cog):
-  @commands.command(name='commands-list')
-  async def helpMe(self, ctx, commandName):
-    if commandName in commandHelps:
-      await ctx.send(embed=Embed(title=commandName, description=commandHelps[commandName]))
-    else:
-      await ctx.send(embed=Embed(description='Unrecognised command'))
-
   @commands.command(name='craft-level')
   async def itemExpCalc(self, ctx, startingLevel, targetLevel, itemExp):
     ''' Calculates the number of items needed to craft to go from one crafting profession level to another. '''

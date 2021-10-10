@@ -21,7 +21,6 @@ for arg in args:
 
 bot = commands.Bot(command_prefix='nw!')
 bot.add_cog(NewWorldCommands())
-
 try:
   bot.run(args['TOKEN'])
 except KeyboardInterrupt:
