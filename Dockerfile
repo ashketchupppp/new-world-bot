@@ -1,3 +1,4 @@
+# docker build . --build-args <TOKEN>
 FROM python:3.9-buster
 ARG TOKEN
 ARG MONGO_CONN_STR

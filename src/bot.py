@@ -19,7 +19,7 @@ for arg in args:
     args[arg] = sys.argv[i]
   i += 1
 
-bot = commands.Bot(command_prefix='nw!')
+bot = commands.Bot(command_prefix='qq!')
 bot.add_cog(NewWorldCommands())
 try:
   bot.run(args['TOKEN'])
